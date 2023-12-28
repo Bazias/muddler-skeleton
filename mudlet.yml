@@ -1,0 +1,127 @@
+---
+base: lua51
+globals:
+  calcFontSize:
+    args:
+      - type: string
+  cecho:
+    args:
+      - type: string
+  echo:
+    args:
+      - type: string
+  debugc:
+    args:
+      - type: string
+  deleteAllNamedEventHandlers:
+    args:
+      - type: string
+  deleteLine:
+    args: []
+  deleteNamedEventHandler:
+    args:
+      - type: string
+      - type: string
+  display:
+    args:
+      - type: any
+  getColumnCount:
+    args: []
+  getMainWindowSize:
+    args: []
+    must_use: true
+  Geyser.Container:
+    struct: Geyser.Container
+  Geyser.Label:
+    struct: Geyser.Label
+  Geyser.MiniConsole:
+    struct: Geyser.MiniConsole
+  gmcp:
+    any: true
+  gmod.disableModule:
+    args:
+      - type: string
+      - type: string
+  gmod.enableModule:
+    args:
+      - type: string
+      - type: string
+  Muddler:
+    struct: Muddler
+  registerAnonymousEventHandler:
+    args:
+      - type: string
+      - type: function
+      - type: bool
+  registerNamedEventHandler:
+    args:
+      - type: string
+      - type: string
+      - type: string
+      - type: function
+      - type: bool
+        required: false
+  send:
+    args:
+      - type: string
+      - type: bool
+        requires: false
+  setBorderBottom:
+    args:
+      - type: number
+  setBorderLeft:
+    args:
+      - type: number
+  setBorderRight:
+    args:
+      - type: number
+  setBorderTop:
+    args:
+      - type: number
+  setWindowWrap:
+    args:
+      - type: string
+      - type: number
+  table.contains:
+    args:
+      - type: table
+      - type: any
+structs:
+  Geyser.Container:
+    new:
+      method: true
+      must_use: true
+      args:
+        - type: table
+        - type: table
+  Geyser.Label:
+    new:
+      method: true
+      must_use: true
+      args:
+        - type: table
+        - type: table
+    setStyleSheet:
+      method: true
+      args:
+        - type: string
+  Geyser.Mapper:
+    new:
+      method: true
+      must_use: true
+      args:
+        - type: table
+        - type: table
+  Geyser.MiniConsole:
+    new:
+      method: true
+      must_use: true
+      args:
+        - type: table
+        - type: table
+  Muddler:
+    new:
+      method: true
+      must_use: true
+      args:
+        - type: table

@@ -1,0 +1,4 @@
+Main "sys/main.lua"
+Output "/workdir/src/resources/main.lua"
+
+Module "sys.main"

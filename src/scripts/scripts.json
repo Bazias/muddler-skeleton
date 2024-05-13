@@ -1,0 +1,6 @@
+[
+  {
+    "name": "main",
+    "script": "sys = require('__PKGNAME__.main')\nsys.version = '__VERSION__'"
+  }
+]
